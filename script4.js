@@ -1,26 +1,43 @@
 // map cycles through an array and creates a totally new array. 
 
 
-const prices = [20,10,30,25,15,40,80,5]
+// const prices = [20,10,30,25,15,40,80,5]
 
 // const salePrices = prices.map(price => price /2 )
 
 // console.log(salePrices)
 
-const products = [
-    {name: 'pop', price: 20},
-    {name: 'beer', price: 64},
-    {name: 'wine', price: 70},
-    {name: 'kombucha', price: 60},
-    {name: 'water', price: 10},
-]; 
+// 
 
-const saleProducts = products.map((product)=> {
- if (product.price > 30 ){
-     return {name: product.name, price: product.price /2}
- } else{
-     return product
+// reduce method
+
+// the 'acc' is like a running total accumlate values and edit it.
+// 
+// const scores = [10,20,30,40,60,70,90]
+
+// const result = scores.reduce((acc,curr)=> {
+//     if (curr > 50 ){
+//         acc++
+//     }
+//     return acc;
+// },0)
+
+// console.log(result)50
+
+
+const scores =[
+    {player: 'jim', score: 75},
+    {player: 'shawn', score: 90 },
+    {player: 'dwight', score: 90 },
+    {player: 'rick', score: 30 },
+    {player: 'jim', score: 100},
+]
+
+const jimTotal = scores.reduce((acc,curr)=>{
+ if (curr.player === 'jim'){
+     acc += curr.score 
  }
-})
+ return acc;
+},0)
 
-console.log(saleProducts)
+console.log(jimTotal)
