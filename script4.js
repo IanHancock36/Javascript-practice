@@ -25,19 +25,35 @@
 // console.log(result)50
 
 
-const scores =[
-    {player: 'jim', score: 75},
-    {player: 'shawn', score: 90 },
-    {player: 'dwight', score: 90 },
-    {player: 'rick', score: 30 },
-    {player: 'jim', score: 100},
+// const scores =[
+//     {player: 'jim', score: 75},
+//     {player: 'shawn', score: 90 },
+//     {player: 'dwight', score: 90 },
+//     {player: 'rick', score: 30 },
+//     {player: 'jim', score: 100},
+// ]
+
+// const jimTotal = scores.reduce((acc,curr)=>{
+//  if (curr.player === 'jim'){
+//      acc += curr.score 
+//  }
+//  return acc;
+// },0)
+
+// console.log(jimTotal)
+
+
+// Comparison function 
+// circle of concerns 
+
+const people = [
+    {name: 'eddie' ,height:'72in' ,weight:'150'},
+    {name:'steve' ,height: '62in',weight:'200'},
+    {name:'joe' ,height: '60in' ,weight:'100'},
+    
 ]
 
-const jimTotal = scores.reduce((acc,curr)=>{
- if (curr.player === 'jim'){
-     acc += curr.score 
- }
- return acc;
-},0)
-
-console.log(jimTotal)
+const byHeight = people.sort((a,b)=>{
+    return a.weight -b.weight
+})
+console.log(byHeight)
