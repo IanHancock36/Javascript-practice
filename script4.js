@@ -46,14 +46,48 @@
 // Comparison function 
 // circle of concerns 
 
-const people = [
-    {name: 'eddie' ,height:'72in' ,weight:'150'},
-    {name:'steve' ,height: '62in',weight:'200'},
-    {name:'joe' ,height: '60in' ,weight:'100'},
+// const people = [
+//     {name: 'eddie' ,height:'72in' ,weight:'150'},
+//     {name:'steve' ,height: '62in',weight:'200'},
+//     {name:'joe' ,height: '60in' ,weight:'100'},
     
-]
+// ]
 
-const byHeight = people.sort((a,b)=>{
-    return a.weight -b.weight
-})
-console.log(byHeight)
+// const byHeight = people.sort((a,b)=>{
+//     return a.weight -b.weight
+// })
+// console.log(byHeight)
+
+// const byName = people.sort((a,b)=>{
+//     if (b.name < a.name) return -1 ;
+//     return 1;
+// })
+
+// console.log(byName)
+
+
+// Chaining array methods togetger
+
+const products = [ 
+ {name: 'gold star', price: 30}, 
+ {name: 'green shell', price: 10}, 
+ {name: 'red shell', price: 40}, 
+ {name: 'banana skin', price: 5}, 
+ {name: 'mushroom', price: 50}, 
+];
+
+// filter the array. 
+
+// const filteredArray = products.filter(product => {
+//     product.price > 20
+// });
+
+// const promos = filteredArray.map(product => {
+//     return ` the ${product.name} is ${product.price /2} dollars`
+// }); 
+
+const promos = products
+.filter(product => product.price > 20 )
+.map(product => `the ${product.name} is ${product.price / 2} dollars`)
+
+console.log(promos)
