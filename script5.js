@@ -1,11 +1,12 @@
-console.log(1);
-console.log(2);
 
-setTimeout(()=> {
-    console.log('callback function fired')
-}, 2000)
+// HTTP requests: 
+    //XMLHTTP will send a request to the browser
+const request = new XMLHttpRequest(); 
+request.addEventListener('readystatechange', ()=>{
+    console.log(request, request.readyState)
+});
+request.open('GET','https://jsonplaceholder.typicode.com/todos/')
 
-console.log(3);
-console.log(4);
+// get data is a get request
 
-
+request.send()
