@@ -18,6 +18,7 @@ function multiplyAll(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let w = 0; w < arr[i].length; w++) {
       console.log(arr[i][w]);
+      product = product* arr[i][w]
     }
   }
   return product;
