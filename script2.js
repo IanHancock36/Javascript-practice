@@ -36,3 +36,5 @@ form.addEventListener('submit', event =>{
 
 // this live feed back is so on the event of every key strike up
 // it is constantly checking values. 
+
+// he
