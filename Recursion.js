@@ -14,3 +14,14 @@ function Cars (){
         Cars()
     }
 }
+
+// Countdown recursive function : 
+    // this will create an infinte loop 
+
+function countDown(fromNumber){
+    console.log(fromNumber);
+    countDown(fromNumber-1);
+}
+
+countDown(3)
+
