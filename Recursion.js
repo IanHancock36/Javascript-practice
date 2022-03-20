@@ -37,13 +37,26 @@ function Cars (){
 // countDown(3);
 
 
-function countDown(num){
-    if (num <= 0){
-        console.log("All Done")
-        return
-    } 
-    console.log(num)
-    num--
-}
-countDown(4)
+// function countDown(num){
+//     if (num <= 0){
+//         console.log("All Done")
+//         return
+//     } 
+//     console.log(num)
+//     num--
+//     countDown(num)
+// }
+// countDown(4)
 // the result will be 4, 3 , 2 , 1 
+// the return statement made under  console.log("All Done")
+ // is to stop the count down. if return is not present it will do an infinite loop. 
+  
+
+ // Other Recursive Function 
+     function sumRange(num){
+         if(num === 1) return 1 
+         return num + sumRange(num - 1) 
+        
+     }
+sumRange(5)
+    
