@@ -58,5 +58,16 @@ function Cars (){
          return num + sumRange(num - 1) 
         
      }
-sumRange(5)
+sumRange(3)
     
+
+// Recursive function
+
+function sum(arr, n) {
+    if(n <= 0) {
+      return 0;
+    } else {
+      return sum(arr, n - 1) + arr[n - 1];
+    }
+  }
+
