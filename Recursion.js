@@ -72,15 +72,58 @@ function sum(arr, n) {
   }
 
 
+// Setup
+const contacts = [
+    {
+      firstName: "Akira",
+      lastName: "Laine",
+      number: "0543236543",
+      likes: ["Pizza", "Coding", "Brownie Points"],
+    },
+    {
+      firstName: "Harry",
+      lastName: "Potter",
+      number: "0994372684",
+      likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+      firstName: "Sherlock",
+      lastName: "Holmes",
+      number: "0487345643",
+      likes: ["Intriguing Cases", "Violin"],
+    },
+    {
+      firstName: "Kristian",
+      lastName: "Vos",
+      number: "unknown",
+      likes: ["JavaScript", "Gaming", "Foxes"],
+    },
+  ];
+  
   function lookUpProfile(name, prop) {
-    for (let i = 0; i < contacts.length; x++) {
-      if (contacts[x].firstName === name) {
-        if (contacts[x].hasOwnProperty(prop)) {
-          return contacts[x][prop];
-        } else {
-          return "No such property";
-        }
-      }
-    }
-    return "No such contact";
+    // Only change code below this line
+    // this loops through all the contacts 
+    for (let i = 0 ; i< contacts.length ; i++ )
+    // this checks if the contacts at any position in the index first name === the name that we pass in as an argument
+  if(contacts[i]["firstName"] === name){
+   if(contacts[i].hasOwnProperty(prop)){
+     return contacts[i][prop]
+   }else {
+     return "No such property"
+   }
   }
+  // exit the loop 
+  return 'No such contact'
+   
+  }
+  
+   console.log(lookUpProfile("Akira", "likes"));
+  
+  
+  
+  // IF the name prop we have we pass as an argument is true return something
+    // IF the prop we pass is true return something
+      // I think I have to loop over the contacts array for name 
+        // then loop over for contacts[arr].likes
+          // then return something
+          //
