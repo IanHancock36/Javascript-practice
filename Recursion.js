@@ -127,3 +127,18 @@ const contacts = [
         // then loop over for contacts[arr].likes
           // then return something
           //
+
+
+// * recursive function with math.random 
+function randomFraction() {
+  // use the assignment operator below: 
+  let result = 0;
+  // Math.random() can generate 0. We don't want to     return a 0,
+  // so keep generating random numbers until we get one     that isn't 0
+if (result === 0){
+  result= Math.random()
+}
+
+  return result;
+  // Only change code above this line.
+}
