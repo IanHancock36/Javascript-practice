@@ -142,3 +142,11 @@ if (result === 0){
   return result;
   // Only change code above this line.
 }
+
+
+// generating whole number 
+
+function randomWholeNum() {
+  // Only change code below this line.
+  return Math.floor(Math.random() * 10);
+}
