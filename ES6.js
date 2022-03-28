@@ -2,6 +2,7 @@
     // JavaScript provides a function Object.freeze to prevent data mutation.
 
    // Object.freeze(obj)
+  // Any attempt at changing the object will be rejected, with an error thrown if the script is running in strict mode.
 
    function freezeObj() {
     const MATH_CONSTANTS = {
