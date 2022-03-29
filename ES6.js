@@ -46,8 +46,13 @@
 
   const increment = (number, value=1) => number + value;
 
-  
-  
 
   
-  
+// rest operator = ... (similar to spread)
+  // same type of syntax but is used inside the functions parameters
+    // condense indefinate # of args into a type of array 
+    
+
+    const sum = (...args) => {
+      return args.reduce((a, b) => a + b, 0);
+      }
