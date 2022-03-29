@@ -26,3 +26,28 @@
   const magic = () => {
     return new Date()
   }
+
+  // old function 
+//   const myConcat = function(arr1, arr2) {
+//     return arr1.concat(arr2);
+//   };
+  
+//   console.log(myConcat([1, 2], [3, 4, 5]));
+
+  // Es6 function if there is two args you keep the paranthens 
+  // if 1 arg you can take away inline style
+  const myConcat = (arr1, arr2) => {
+    return arr1.concat(arr2);
+  };
+  
+  console.log(myConcat([1, 2], [3, 4, 5]));
+
+  // default parameters when there is not a one set out side te default kicks is 
+
+  const increment = (number, value=1) => number + value;
+
+  
+  
+
+  
+  
