@@ -65,3 +65,16 @@
     //  Here's how you can give new variable names in the assignment:
       
       const { name: userName, age: userAge } = user;
+
+      // Here we can sub in new variable names in an assignment
+      const HIGH_TEMPERATURES = {
+        yesterday: 75,
+        today: 77,
+        tomorrow: 80
+      };
+      
+// assigning a new variable name for today and tomorrow
+        
+      const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+      
+  
