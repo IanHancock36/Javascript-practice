@@ -77,4 +77,17 @@
         
       const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
       
-  
+  // result { yesterday: 75, today: 77, tomorrow: 80 }
+
+  // Array Destructuring 
+
+      const [a, b] = [1,2,3,4,5,6]
+       console.log (a,b)
+       // a,b will be assigned to 1 and 2 
+
+       // destructuring with commas 
+
+       const [f,g,,,c] = [1,2,3,4,5,6,7,8]
+       console.log(a,b,c)
+       // now c will be assinged to unmber 5 in the array 
+
