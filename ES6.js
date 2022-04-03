@@ -91,3 +91,14 @@
        console.log(a,b,c)
        // now c will be assinged to unmber 5 in the array 
 
+       // reassiging variable and values
+
+       let z= 8, j = 6 
+
+       // I want to reassign the values to flip 
+        // I want z to = 6 and vice versa
+        [z,j] =[j,z]
+
+        
+
+
