@@ -121,5 +121,31 @@
           // this takes the max and min in the object passes it as a parameter shorthand handling of 
             // of the function 
      
+           // Use getters and setters to Control Access to an Object
 
+       //    Create the class, Thermostat. You’re going to put your constructor, getter, and setter in here.
+
+
+//Give the constructor a parameter (which you can name anything you want). Set the parameter to an attribute of the same name. Remember, you are initially setting things in Fahrenheit temperature.
+
+
+//Create a get method that converts the Fahrenheit attribute to Celsius. Use the formula given to you.
+
+
+//Create a set method of the same name as the get method. It should have a parameter that accepts celsius temperature. Convert it to fahrenheit, and set it to the attribute.
+
+
+class Thermostat {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+  
+  get temperature() {
+    return (5 / 9) * (this.fahrenheit - 32);
+  }
+  
+  set temperature(celsius) {
+    this.fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
 
