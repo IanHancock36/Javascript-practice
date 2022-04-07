@@ -148,4 +148,8 @@ class Thermostat {
     this.fahrenheit = (celsius * 9.0) / 5 + 32;
   }
 }
+// Promise 
+const makeServerRequest  = new Promise((resolve, reject) => {
+
+});
 
