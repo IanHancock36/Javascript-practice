@@ -148,6 +148,11 @@ class Thermostat {
     this.fahrenheit = (celsius * 9.0) / 5 + 32;
   }
 }
+
+// Reuse Code 
+
+import { add, subtract } from './math_functions.js';
+
 // Promise 
 const makeServerRequest  = new Promise((resolve, reject) => {
 
