@@ -190,3 +190,8 @@ const makeMyMyServerRequest = new Promise((resolve, reject) => {
 makeMyMyServerRequest.then(result => {
   console.log(result);
   })
+  // this is usually chained inside a try catch this is the error so you can get a response from the server 
+    // on what exactly the error is. 
+  makeMyMyServerRequest.catch(error => {
+    console.log(error);
+  });
