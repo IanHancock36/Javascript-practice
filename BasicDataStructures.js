@@ -26,3 +26,17 @@ arr.push(7, 'VIII', 9)
 }
 
 console.log(mixedNumbers(['IV', 5, 'six']));
+
+
+// removing from beggining and end of array 
+function popShift(arr) {
+    let popped = arr.pop(); 
+    let shifted = arr.shift(); 
+//    return arr // = [ 'is', 'not' ]
+   
+// if we return this way 
+   return ['challenge', 'complete'] //// = [ 'challenge', 'complete' ]
+  }
+  // we are telling it that we want to mutate the array prior to removal with pop and shift. 
+  
+  console.log(popShift(['challenge', 'is', 'not', 'complete'])); 
