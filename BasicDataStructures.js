@@ -40,3 +40,12 @@ function popShift(arr) {
   // we are telling it that we want to mutate the array prior to removal with pop and shift. 
   
   console.log(popShift(['challenge', 'is', 'not', 'complete'])); 
+
+
+  // remove items in an array with splice to make the sum of the array add to 10 
+
+  const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+
+arr.splice(1,4)
+
+console.log(arr); // = [ 2, 5, 2, 1 ] (10)
