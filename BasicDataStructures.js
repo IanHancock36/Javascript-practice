@@ -49,3 +49,22 @@ function popShift(arr) {
 arr.splice(1,4)
 
 console.log(arr); // = [ 2, 5, 2, 1 ] (10)
+
+// removing and adding to an array using splice and 3 params
+
+  // you have your start index 
+    // you have number of items to remove
+      // 3rd can be what you want to add at the removal index point 
+
+      function htmlColorNames(arr) {
+      const startIndex = 0 
+      const amountToDelete = 2
+      //looks like start at index of 0 remove 2 items add these two in the place
+      //       arr.splice(0, 2,'DarkSalmon','BlanchedAlmond' )
+      arr.splice(startIndex, amountToDelete,'DarkSalmon','BlanchedAlmond' )
+ 
+        return arr;
+      }
+      
+      console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+      // this returns ['DarkSalmon','BlanchedAlmond','LavenderBlush','PaleTurquoise','FireBrick']
