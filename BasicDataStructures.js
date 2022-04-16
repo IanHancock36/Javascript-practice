@@ -68,3 +68,15 @@ console.log(arr); // = [ 2, 5, 2, 1 ] (10)
       
       console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
       // this returns ['DarkSalmon','BlanchedAlmond','LavenderBlush','PaleTurquoise','FireBrick']
+
+      // slice the middle of an array and return the values 
+        // the 1st param starts on where removal takes place, second param on where to stop removal
+
+        function forecast(arr) {
+
+          return arr.slice(2, 4);
+        
+        }
+        
+ 
+        console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
