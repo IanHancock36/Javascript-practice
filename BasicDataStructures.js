@@ -103,3 +103,19 @@ function spreadOut() {
 console.log(spreadOut()); 
 // result [ 'learning', 'to', 'code', 'is', 'fun' ]
   // taking the fragment and putting it in the index of 1 will create this sentence
+
+
+  // indexOf 
+  function quickCheck(arr, elem) {
+    return arr.indexOf(elem) >= 0 ? true: false
+    // in these two parameters taking the index
+      // off the arr which is the array of diff elements
+        // the amount of elem is the parameter for indexOf()
+          // you are checking does is the element 0 - whatever if the element is not in the array that is a -1 in the array(the end)
+  // and this will return false. 
+    // Only change code above this line
+  }
+  console.log(quickCheck(['candy', 'breakfast', 'hamburger'], 'coffee'));
+// this first param in the console.log is the array of arr 
+  // second is the element you are checking to see if its in there 
+    // is coffee there ? no its -1 in the array. 
