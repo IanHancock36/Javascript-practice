@@ -71,12 +71,23 @@ console.log(arr); // = [ 2, 5, 2, 1 ] (10)
 
       // slice the middle of an array and return the values 
         // the 1st param starts on where removal takes place, second param on where to stop removal
-
+          // this does not mutate the original array but makes a copy of it with the update. 
         function forecast(arr) {
-
-          return arr.slice(2, 4);
+         return arr.slice(2, 4);
         
         }
-        
- 
         console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+
+        // Using spread operator 
+        function copyMachine(arr, num) {
+          let newArr = [];
+          while (num >= 1) {
+          newArr.push([...arr])
+          // this pushes the changes to the end of the array. 
+          num--;
+          }
+          return newArr;
+        }
+        
+        console.log(copyMachine([true, false, true], 2));
