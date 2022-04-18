@@ -91,3 +91,15 @@ console.log(arr); // = [ 2, 5, 2, 1 ] (10)
         }
         
         console.log(copyMachine([true, false, true], 2));
+
+// using spread to add in an index of another array. 
+
+function spreadOut() {
+  let fragment = ['to', 'code'];
+
+  let sentence =["learning",...fragment,'is', 'fun']
+  return sentence;
+}
+console.log(spreadOut()); 
+// result [ 'learning', 'to', 'code', 'is', 'fun' ]
+  // taking the fragment and putting it in the index of 1 will create this sentence
