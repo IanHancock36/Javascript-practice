@@ -17,11 +17,22 @@ let total = orders.reduce((accumulator, currentOrder)=> {
 
 },0)
 // the 0 here is the default value to start with 
-console.log(total) // this === 100 
+// console.log(total) // this === 100 
 // the 0 here is the default value to start with 
 
+// to start at the end of the array. 
 
+const order2 = [
+    {id:1 , total2: 10.00},
+    {id:2 , total2: 20.00},
+    {id:3 , total2: 30.00},
+    {id:4 , total2: 40.00}
+]
+let total2 = order2.reduceRight((accumulator, currentOrder2)=> {
+    return accumulator + currentOrder2.total
 
+},0)
+console.log(total2)
 
 function largestOfFour(mainArray) {
     return mainArray.map(function (subArray){
