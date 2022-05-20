@@ -25,3 +25,12 @@ function getPosts() {
 }
 
 getPosts();
+
+
+function createPost(post) {
+    setTimeout(()=> {
+        posts.push(post)
+    },2000)
+}
+
+createPost({title:'Post 3', body:'this is post 3'});
