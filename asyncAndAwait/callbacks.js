@@ -24,13 +24,17 @@ function getPosts() {
   }, 1000);
 }
 
-getPosts();
 
-
-function createPost(post) {
+function createPost(post, callback) {
     setTimeout(()=> {
         posts.push(post)
+        callback()
     },2000)
 }
+// getPosts();
+createPost({title:'Post 3', body:'this is post 3'}, getPosts);
 
-createPost({title:'Post 3', body:'this is post 3'});
+// this callback of get posts can be placed in the create posts so it all runs in succession 
+// A JavaScript callback is a function which is to be executed after another function has finished execution. 
+// A more formal definition would be - Any function that is passed as an argument to another function so that 
+// it can be executed in that other function is called as a callback function
