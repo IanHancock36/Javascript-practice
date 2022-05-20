@@ -44,3 +44,13 @@ createPost({title: "Post Three", body: "this is post #3"}).then(getPosts).catch(
 // no need to use a call back because we can put it in the .then syntax at the end of the post. 
 
 
+
+
+// Promise.all 
+
+const promise1 = Promise.resolve("Hello")
+const promise2 = 10
+const promise3 = new Promise((resolve,reject)=> 
+    setTimeout(resolve,2000, 'Goodbye'))
+
+    Promise.all([promise1,promise2,promise3]).then((values)=>console.log(values))
