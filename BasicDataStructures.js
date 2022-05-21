@@ -143,4 +143,11 @@ console.log(spreadOut());
 
 
 
-    
+    "Nothing is cooler and more attractive than a big comeback, and that'll be me."
+
+
+function reverseThisQuote(string) {
+    return string.split("").reverse().join("")
+}
+console.log(reverseThisQuote("Nothing is cooler and more attractive than a big comeback, and that'll be me."))
+
