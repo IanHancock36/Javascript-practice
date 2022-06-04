@@ -64,6 +64,7 @@ function largestOfFour(mainArray) {
 // #2 the accumulator or (acc) the last value you returned from the function
 // the current or (currentOrder) current value in the loop
 // setting a default starting value of 0 
+
 let total = orders.reduce(
     (acc, currentOrder) => {
         return acc + currentOrder.total
