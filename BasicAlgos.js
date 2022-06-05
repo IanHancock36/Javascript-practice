@@ -95,3 +95,22 @@ function findLongestWordLength(str) {
 //str.split(" ").map(word => word.length) returns [3, 5, 5, 3, 6, 4, 3, 4, 3]
 
 //Finally, we pass the array as argument for the Math.max function with the spread operator ...
+
+
+
+//***************************************Confirm Ending of String***********************************************************\\
+
+// The .substring() method returns the part of the string between the start and end indexes, or to the end of the string.
+  // example const hello ="hello" hello.substring(0,3) would return "l" gives a starting to end poing
+  // string.substr(-target.length) will get the last index of the string
+  const cool = "hello"
+  console.log(cool.substring(0,2))
+  
+  function confirmEnding(str, target) {
+  return (str.substring(-target.length) === target) ? true : false 
+
+
+}
+confirmEnding("Sweet Deal", "n")
+
+console.log(confirmEnding("Sweet Deal", "n"))
