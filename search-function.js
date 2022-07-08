@@ -29,3 +29,40 @@ function App() {
     </div>
   );
 }
+
+function App() {
+  const [searchValue, setSearchValue] = useState("");
+
+  const onChangeTextHandler = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  const onSearch = (searchTerm) => {
+    console.log("search", searchTerm);
+  };
+
+  return (
+    <div className="App">
+      <div>
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchValue}
+          onChange={onChangeTextHandler}
+        />
+        <button onClick={() => onSearch(searchValue)}>Search Text</button>
+      </div>
+      <div className="user">
+        {JSONDATA.filter((item) => {
+          const searchTerm = searchValue.toLowerCase();
+          const fullName = item.first_name.toLowerCase();
+          return fullName.startsWith(searchTerm);
+        }).map((item) => {
+          return <div>{item.first_name}</div>;
+        })}
+      </div>
+    </div>
+  );
+}
+
+export default App;
