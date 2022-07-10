@@ -66,3 +66,41 @@ function App() {
 }
 
 export default App;
+
+const [searchText, setSearchText] = useState("")
+const [search, setSearch] = useState(false);
+
+return (
+  <div className="App">
+    <h1>Search Users</h1>
+    <div className="search-bar-row">
+      <div>
+        <input
+          placeholder="Search Username"
+          onChange={(e) => setSearchText(e.target.value)}
+          value={searchText}
+        />
+      </div>
+      <div>
+        <button onClick={() => null} style={{ height: 50, width: 80 }}>
+          Search
+        </button>
+        </div>
+    </div>
+    <div style ={{marginTop: "25px"}}>
+    {JSONDATA.filter(item=>({
+      if(searchText===''){
+        return item
+      }else if( searchText.toLowerCase().includes(item.first_name.toLowerCase())){
+        return item
+      }
+    )}
+    .map((item, index)=>{
+        return(
+          <div key={index}>{item.first_name}</div>
+        )
+      })}
+  </div>
+  </div>
+);
+};
