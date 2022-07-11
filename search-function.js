@@ -1,40 +1,24 @@
-import React, { useState } from 'react';
-import './style.css';
-import Userdata from './MOCK_DATA.json';
-
-export default function App() {
-  const [searchText, setSearchText] = useState('');
-  const [searchClick, setSearchClick] = useState(false);
-
-  return (
-    <div>
-      <h1>Search This </h1>
-      <input
-        type="text"
-        placeholder="SEARCH THIS"
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
-      />
-      <button onClick={() => setSearchClick(true)}>SEARCH ME PLEASE</button>
-      {searchClick ? (
-        <div>
-          {Userdata.filter((item) => {
-            if (searchText === '') {
-              return item;
-            } else if (
-              searchText.toLowerCase().includes(item.first_name.toLowerCase())
-            ) {
-              return item;
-            }
-          }).map((item, index) => {
-            return (
-              <div key={index}>
-                <p>{item.first_name}</p>
-              </div>
-            );
-          })}
-        </div>
-      ) : null}
-    </div>
-  );
+function factorialize(number){
+  if (number === 0 ){
+    return 1
+  }else{
+    return number * factorialize(number - 1)
+  }
 }
+console.log(factorialize(5))
+
+
+// factoralizing a number is taking all the integers leading up to that number
+  // 5 would equal = 1*2*3*4*5 = 120 
+
+// this will create a loop until it cycles through the number until it hits 1 
+// 5,4,3,2,1
+
+// example
+//5   * 4 = 20 
+//20  * 3 = 60 
+//60  * 2 = 120 
+//120 * 1 = 120 
+
+
+
