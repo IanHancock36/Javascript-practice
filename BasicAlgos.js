@@ -152,3 +152,26 @@ const search = function(nums, target) {
 //Input: nums = [-1,0,3,5,9,12], target = 9
 //Output: 4
 //Explanation: 9 exists in nums and its index is 4
+
+
+// **************************************find largerst word in string ************************************** \\
+
+const string = "the quick brown fox jumped over the lazy dog"
+
+// need to split the string in an array. 
+const strArray = string.split(" ")
+//result
+console.log(strArray)
+// result [
+//  'the',    'quick',
+//  'brown',  'fox',
+//  'jumped', 'over',
+//  'the',    'lazy',
+//  'dog'
+//]
+
+// sort the array for largest length of string in the array 
+const sortedArray = strArray.sort((stringA, stringB)=>{
+  // if the 2nd string is larger it will move it up the array to get the larger strings to the front of the array
+  return stringB.length - stringA.length
+})
