@@ -156,12 +156,12 @@ const search = function(nums, target) {
 
 // **************************************find largerst word in string ************************************** \\
 
-const string = "the quick brown fox jumped over the lazy dog"
+
 
 // need to split the string in an array. 
-const strArray = string.split(" ")
+// const strArray = string.split(" ")
 //result
-console.log(strArray)
+// console.log(strArray)
 // result [
 //  'the',    'quick',
 //  'brown',  'fox',
@@ -171,7 +171,34 @@ console.log(strArray)
 //]
 
 // sort the array for largest length of string in the array 
-const sortedArray = strArray.sort((stringA, stringB)=>{
+// const sortedArray = strArray.sort((stringA, stringB)=>{
   // if the 2nd string is larger it will move it up the array to get the larger strings to the front of the array
-  return stringB.length - stringA.length
-})
+//   return stringB.length - stringA.length
+// })
+// console.log("SORTED ARRAY", sortedArray)
+// result 
+// [
+  // 'jumped', 'quick',
+  // 'brown',  'over',
+  // 'lazy',   'the',
+  // 'fox',    'the',
+  // 'dog'
+// ]
+// now look up the first index of the array the largest one should be at the front or 0 index
+// console.log(sortedArray[0])
+// result will be jumped as looking above
+
+// function to be reuseable 
+const str = "the quick brown fox jumped over the lazy dog"
+const longestWord = (str) =>{
+  const strArray = str.split(" ")
+  const sortedStringArray = strArray.sort(
+    (stringA, stringB) => {
+ return stringB.length - stringA.length
+  }
+  )
+  return sortedStringArray[0]
+}
+console.log(longestWord(str))
+
+// this will return the largest word which is jumped
