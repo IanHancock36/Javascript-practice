@@ -82,7 +82,7 @@ function factorialize(num) {
 function findLongestWordLength(str) {
     return Math.max(...str.split(" ").map(word => word.length));
   }
-  console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
+  // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
 
   //We provide Math.max with the length of each word as argument, and it will simply return the highest of all.
 
@@ -113,7 +113,7 @@ function findLongestWordLength(str) {
 }
 confirmEnding("Sweet Deal", "n")
 
-console.log(confirmEnding("Sweet Deal", "n"))
+// console.log(confirmEnding("Sweet Deal", "n"))
 
 
 
@@ -197,8 +197,32 @@ const longestWord = (str) =>{
  return stringB.length - stringA.length
   }
   )
-  return sortedStringArray[0]
+  // return sortedStringArray[0]
 }
-console.log(longestWord(str))
+// console.log(longestWord(str))
 
 // this will return the largest word which is jumped
+
+
+// Return Largest Numbers in Arrays
+
+function largestOfFour(arr) {
+  // loop through all the arrays 
+  // need two loops
+
+  for (let i = 0; i < arr.length; i++){
+//  console.log(arr[i])
+// i is the indivdual arrays the sub arrays 
+// j is the itmes inside the array
+ // 2nd loop 
+ for( j = 0; j< arr.length; j++){
+  // logging like this now brings all individual values of the array and the items inside sub array 
+  // breaks them out into one list
+console.log(arr[i][j])
+ }
+  }
+
+
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
