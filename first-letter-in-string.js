@@ -34,4 +34,11 @@ console.log(words)
             // this will return and array we want a sentence
                 // .join provides it to become a sentence. 
 
+  //another solution is....
+
+  function titleCase(str) {
+    return str.toLowerCase().split(" ").map(val => val.replace(val.charAt(0), val.charAt(0).toUpperCase()))
+      .join(" ");
+  }
   
+  titleCase("I'm a little tea pot");
