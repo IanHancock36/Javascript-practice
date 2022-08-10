@@ -35,6 +35,9 @@ console.log(words)
                 // .join provides it to become a sentence. 
 
   //another solution is....
+  // taking every letter and converting to lowercase 
+  //then while iterating using .replace() the characture at 0 in each word from lowercase to val.charAt(0).toUpperCase()
+    // then using the join method to create a sentence. 
 
   function titleCase(str) {
     return str.toLowerCase().split(" ").map(val => val.replace(val.charAt(0), val.charAt(0).toUpperCase()))
@@ -42,3 +45,5 @@ console.log(words)
   }
   
   titleCase("I'm a little tea pot");
+
+  
