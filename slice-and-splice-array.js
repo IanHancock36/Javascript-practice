@@ -5,7 +5,7 @@
 // javascript slice starts on a index number and ends on an index number 
 
 const drinks = ["beer", "tea", "soda", "water"]
-const sliceDrinks = drinks.slice(1, 3)
+const sliceDrinks = drinks.slice(1, 2)
 console.log(sliceDrinks)
 // this would result in returning in a new array 
 // ["tea","soda"]
