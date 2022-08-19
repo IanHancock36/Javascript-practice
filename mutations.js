@@ -9,8 +9,15 @@
 
 
 
-function mutation(arr) {
-    return arr;
-  }
+// function mutation(array) {
+//     firstWord = array[0]
+//     secondWord = array[1]
+//     array.some(value => value.toLowerCase() === 'hell')
+// }
   
-  mutation(["hello", "hey"]);
+//  console.log( mutation(["hello", "hell"]));
+
+const array = ['SAMANTHA', 'sam'];
+secondWord = array[1]
+console.log(array.some(value => value.toLowerCase() === secondWord))
+
