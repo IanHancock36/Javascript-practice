@@ -50,3 +50,20 @@ for (let property in canary) {
 }
 
 console.log(ownProps, canary);
+ 
+
+
+// Prototyping 
+// adding The JavaScript prototype property allows you to add new properties to object constructors:
+
+function Dog(name) {
+  this.name = name;
+}
+
+
+ Dog.prototype.numLegs = 4
+// Only change code above this line
+let beagle = new Dog("Snoopy");
+console.log(beagle.numLegs)
+
+// now beagle.numlegs will = 4 
