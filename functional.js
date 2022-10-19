@@ -118,12 +118,33 @@ function checkPositive(arr) {
   ];
   
 
-   const ratings = watchList.map(item =>( 
-     {title: item["Title"],rating: item["imdbRating"]}
-     ))
+  //  const ratings = watchList.map(item =>( 
+  //    {title: item["Title"],rating: item["imdbRating"]}
+  //    ))
 
-    const ratings = watchList.map(item =>(
-      {type: item[ "Type"], rating:item["imdbRating"]}
-    ))
-    console.log(JSON.stringify(ratings));
-    // drilling into Json Object
+  //   const ratings = watchList.map(item =>(
+  //     {type: item[ "Type"], rating:item["imdbRating"]}
+  //   ))
+  //   console.log(JSON.stringify(ratings));
+  //   // drilling into Json Object
+
+
+    // map like function 
+
+let s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  let newArray = [];
+
+  // Add your code below this line
+  for (let i = 0; i < this.length; i++) {
+    newArray.push(callback(this[i]));
+  }
+  // Add your code above this line
+console.log(newArray)
+  return newArray;
+};
+
+let new_s = s.myMap(function(item) {
+  return item * 2;
+});
