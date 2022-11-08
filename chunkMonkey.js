@@ -36,6 +36,7 @@ const chunkArrayInGroups =(array, size)=> {
   let monkeyArray = [];
   // you want to select first two then .push() to the
   // new array monkeyArray []
+  // this while loop will operate only while conditions are met. 
   while (array.length) {
     // this will start at 0 and select until size argument is fullfilled
     // in this case its 2
@@ -44,4 +45,6 @@ const chunkArrayInGroups =(array, size)=> {
   return monkeyArray;
 }
 console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+
+
 
