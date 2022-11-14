@@ -433,3 +433,21 @@ function nonMutatingSplice(cities) {
 
 const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 nonMutatingSplice(inputCities);
+
+
+
+//concat method 
+// how to non mutate original array use concat to add to the end of a new array without
+// mutating the orig .push mutates orig array. 
+
+function nonMutatingPush(original, newItem) {
+  // Only change code below this line
+  return original.push(newItem);
+
+  // Only change code above this line
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingPush(first, second);
+
