@@ -451,3 +451,22 @@ const first = [1, 2, 3];
 const second = [4, 5];
 nonMutatingPush(first, second);
 
+
+
+// call back functions 
+ 
+
+const myPromise = new Promise((reslove, reject)=>{
+let connection = true
+
+if(connection){
+  reslove('connect true')
+
+}else {
+  reject("failed")
+}
+})
+
+myPromise.then((message)=>{
+  console.log(message)
+})
