@@ -501,3 +501,15 @@ function splitify(str) {
 
 }
 splitify("Hello World,I-am code");
+
+// split and join into one array
+// split into an array by indvidual word and remove hyphens. 
+// join all charatures into an array 
+
+function sentensify(str) {
+
+return str.split(/\W/).join(" ")
+
+}
+
+console.log(sentensify("May-the-force-be-with-you"));
