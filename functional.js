@@ -487,3 +487,17 @@ function urlSlug(title) {
 
 // Only change code above this line
 urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
+
+
+// Split by string 
+// use .split() to split each word up 
+// use regex .split(/\W/)
+///\W/ Matches any non-word character. 
+// This includes spaces and punctuation, 
+//but not underscores. It’s equivalent to /[^A-Za-z0-9_]/.
+
+function splitify(str) {
+  return str.split(/\W/);
+
+}
+splitify("Hello World,I-am code");
