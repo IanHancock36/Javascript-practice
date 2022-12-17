@@ -39,3 +39,21 @@ Dog.prototype = Object.create(Animal.prototype)
 let boston = new Dog("steve")
 
 // this makes dog inherit from Animal 
+
+
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+let duck = new Bird();
+Bird.prototype.constructor = Bird
+console.log(duck.constructor)
+let beagle = new Dog();
+Dog.prototype.constructor = Dog
+console.log(beagle.constructor)
+
+// this gives the inhertiece or refernce to the constructors of the individual animals
+// while still living in the Animal Object. 
