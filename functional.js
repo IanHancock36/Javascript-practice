@@ -504,7 +504,8 @@ splitify("Hello World,I-am code");
 
 // split and join into one array
 // split into an array by indvidual word and remove hyphens. 
-// join all charatures into an array 
+// join all charatures into an array if there is a " " and no seperator inbetween the 
+// the array will join together. 
 
 function sentensify(str) {
 
