@@ -19,3 +19,23 @@ console.log(beagle instanceof Animal)
 // prototype is a recipe for creating an object setting prototype of duck to being the prototype 
 // of Animal above you are giving the instance of Animal to the duck or "recipe" to any thing else you 
 // assign the prototype to. 
+
+// prototype is a recipe for creating an object 
+
+
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+
+Dog.prototype = Object.create(Animal.prototype)
+let boston = new Dog("steve")
+
+// this makes dog inherit from Animal 
