@@ -521,3 +521,13 @@ console.log(sentensify("May-the-force-be-with-you"));
 let myString = "freeCodeCamp";
 let fccRegex = /freeCodeCamp/i;
 let result = fccRegex.test(myString);
+
+
+// using .match()
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex) // Change this line
+
+
+
