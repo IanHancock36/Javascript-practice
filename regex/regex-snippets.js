@@ -13,5 +13,11 @@ let result2 = petRegex.test(petString);
 // this matches all global instances of a work in the string as well 
 // as is case insensitve 
 let twinkleStar = "Twinkle, twinkle, little star";
-let starRegex = /twinkle/gi; // Change this line
-let result = twinkleStar.match(starRegex); // Change this line
+let starRegex = /twinkle/gi 
+let result = twinkleStar.match(starRegex); 
+
+
+// This below will match using the "wildcard" so if you want to match something fun , sun run you can use the wildcard with this syntax
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /un./; // Change this line
+let result = unRegex.test(exampleStr);
