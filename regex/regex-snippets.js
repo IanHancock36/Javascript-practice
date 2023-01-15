@@ -16,7 +16,7 @@ let result2 = petRegex.test(petString);
 
 let quoteSample = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi;
-let resultz = quoteSample.match(alphabetRegex);
+let resultzz = quoteSample.match(alphabetRegex);
 
 //The g and i modifiers have these meanings:
 
@@ -27,15 +27,21 @@ let resultz = quoteSample.match(alphabetRegex);
 // as is case insensitve 
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi 
-let result = twinkleStar.match(starRegex); 
+let resultzzz = twinkleStar.match(starRegex); 
 
 
 // This below will match using the "wildcard" so if you want to match something fun , sun run you can use the wildcard with this syntax
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /un./; // Change this line
-let result = unRegex.test(exampleStr);
+let resultzzzz = unRegex.test(exampleStr);
 // this allows you to search for the middle charactures in a word 
-let quoteSample =
+let quoteSamplez =
   "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/gi; // Change this line
-let result = quoteSample.match(vowelRegex); // Change this line
+let resultz = quoteSample.match(vowelRegex); // Change this line
+
+// This below matches a range of letters h-s and numbers 2-6 and is global  
+// and case insensitive
+let quoteSample1 = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/gi; // Change this line
+let result1 = quoteSample.match(myRegex); // Change this line
