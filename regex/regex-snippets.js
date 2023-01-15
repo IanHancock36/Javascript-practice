@@ -45,3 +45,8 @@ let resultz = quoteSample.match(vowelRegex); // Change this line
 let quoteSample1 = "Blueberry 3.141592653s are delicious.";
 let myRegex = /[h-s2-6]/gi; // Change this line
 let result1 = quoteSample.match(myRegex); // Change this line
+
+// this will ignore numbers and any vowels globally and be case insensitive
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
