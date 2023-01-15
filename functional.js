@@ -514,3 +514,20 @@ return str.split(/\W/).join(" ")
 }
 
 console.log(sentensify("May-the-force-be-with-you"));
+
+
+// this below will ignore the case sensitivity the /freeCodeCamp/i the "i" ignores the case of the words and matches the string for the string 
+// letter for letter.
+let myString = "freeCodeCamp";
+let fccRegex = /freeCodeCamp/i;
+let result = fccRegex.test(myString);
+
+
+// using .match()
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex) // Change this line
+
+
+
