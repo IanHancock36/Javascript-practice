@@ -19,3 +19,10 @@ function concat(a1: number[], a2: number | number[]) {
   let a2Array = Array.isArray(a2) ? a2 : [a2];
   return [...a1, ...a2Array];
 }
+
+
+function stringify(inputVar :number | boolean | string ){
+  return inputVar.toString()
+  }
+
+  
