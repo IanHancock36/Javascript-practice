@@ -26,3 +26,20 @@ function stringify(inputVar :number | boolean | string ){
   }
 
   
+
+  function addOrSubtract(
+    number: number,
+    choice: "add" | "subtract" | "leave-alone"
+  ) {
+    if (choice === "add") {
+      return number + 1;
+    }
+    if (choice === "subtract") {
+      return number - 1;
+    }
+    if (choice === "leave-alone") {
+      return number;
+    }
+    return number //origin Not all code paths return a value
+  }
+  
