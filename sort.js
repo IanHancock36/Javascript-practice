@@ -42,4 +42,15 @@ function stringify(inputVar :number | boolean | string ){
     }
     return number //origin Not all code paths return a value
   }
+
+
+
+  let rickyAndCal = "Cal Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+console.log(result)
+
+// this matches the first word in the string 
+//if the sentence was "Ricky Cal both like racing."
+// it would return false since first words or letters in string do not match Cal
   
