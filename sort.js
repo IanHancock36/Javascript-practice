@@ -54,3 +54,9 @@ console.log(result)
 //if the sentence was "Ricky Cal both like racing."
 // it would return false since first words or letters in string do not match Cal
   
+
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
+
+// searches for the end of the string
