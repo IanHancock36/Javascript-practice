@@ -60,3 +60,13 @@ let lastRegex = /caboose$/; // Change this line
 let result = lastRegex.test(caboose);
 
 // searches for the end of the string
+
+
+
+function first<T>(elements: Array<T>): T {
+  return elements[0];
+}
+//first<boolean>([true, false]);
+//RESULT:
+//true
+// We fill the type hole when we call the function. For example, first<boolean> fills the type hole with boolean. Let's trace the boolean type's path through the function, imagining what the compiler is doing. At each step, it replaces the T type parameter with the actual type.//
