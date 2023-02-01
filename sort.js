@@ -70,3 +70,20 @@ function first<T>(elements: Array<T>): T {
 //RESULT:
 //true
 // We fill the type hole when we call the function. For example, first<boolean> fills the type hole with boolean. Let's trace the boolean type's path through the function, imagining what the compiler is doing. At each step, it replaces the T type parameter with the actual type.//
+
+
+
+function last<T>(elements: Array<T>): T {
+  return elements[elements.length - 1];
+}
+let results: [string, number] = [last<string>(['a', 'b', 'c']),last<number>([1, 2, 3]),];
+results;
+RESULT:
+['c', 3]
+
+// elements.length - 1 gives the index length of 2 for each array 
+// you want to return last letter in array and return it 
+// return last number in array 
+// put both into the array because results is looking for an array with [string,number]
+
+// result would be ['c',3]
