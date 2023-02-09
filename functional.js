@@ -299,3 +299,6 @@ console.log(output);  // Output: true
 function length<T>(arr: T[]): number {
     return arr.length;
   }
+  function length<T>(arr: T[]): number {
+    return arr.length;
+  }
