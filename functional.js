@@ -294,3 +294,8 @@ console.log(output);  // Output: 123
 
 output = identity<boolean>(true);  // type of output is boolean, value is true
 console.log(output);  // Output: true
+
+
+function length<T>(arr: T[]): number {
+    return arr.length;
+  }
