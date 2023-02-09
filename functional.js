@@ -285,3 +285,12 @@ console.log(parseInt(myId))
 function identidy<T>(arg:T ): T {
     return arg
 }
+
+let output = identity<string>("hello");  // type of output is string, value is "hello"
+console.log(output);  // Output: "hello"
+
+output = identity<number>(123);  // type of output is number, value is 123
+console.log(output);  // Output: 123
+
+output = identity<boolean>(true);  // type of output is boolean, value is true
+console.log(output);  // Output: true
