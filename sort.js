@@ -87,3 +87,17 @@ RESULT:
 // put both into the array because results is looking for an array with [string,number]
 
 // result would be ['c',3]
+
+type User = {
+  name: string
+};
+
+function nameOrLength(userOrUsers: User | User[]) {
+  if (Array.isArray(userOrUsers)) {
+    // Inside this side of the if, userOrUsers' type is User[].
+    return userOrUsers.length;
+  } else {
+    // Inside this side of the if, userOrUsers' type is User.
+    return userOrUsers.name;
+  }
+}
