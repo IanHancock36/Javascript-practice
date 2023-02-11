@@ -101,3 +101,9 @@ function nameOrLength(userOrUsers: User | User[]) {
     return userOrUsers.name;
   }
 }
+
+
+
+function hasLoggedIn(times:number | true ){
+  return (typeof times === 'boolean') ? true : times >0 
+}
