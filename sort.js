@@ -107,3 +107,19 @@ function nameOrLength(userOrUsers: User | User[]) {
 function hasLoggedIn(times:number | true ){
   return (typeof times === 'boolean') ? true : times >0 
 }
+
+
+
+// this can take multiple types and either single element or an array 
+// this function must use generic types 
+// check if array return 1st or index of 0 inside the array 
+// if not array return element 
+
+function first<T>(element : T | T[]): T {
+  // checking if the element is an array 
+  if(Array.isArray(element)){
+     return element[0]
+  }else{
+    return element
+  }  
+}
