@@ -123,3 +123,23 @@ function first<T>(element : T | T[]): T {
     return element
   }  
 }
+
+
+
+function userName(user: {name: string}): string {
+  return user.name;
+}
+userName({name: 'Amir'});
+
+// generic types 
+type Pants<T> = {
+  left: T
+  right: T
+};
+
+let pants: Pants<string>{
+  left:'phone',
+  right: 'keys'
+}
+
+pants.left; ="phone"
