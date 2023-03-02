@@ -143,3 +143,8 @@ let pants: Pants<string>{
 }
 
 pants.left; ="phone"
+
+type Pants<T1, T2> = {
+  left: T1
+  right: T2
+};
